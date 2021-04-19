@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../fonts/WorkSans-VariableFont_wght.ttf')  format('truetype'),
+         url('../fonts/WorkSans-Italic-VariableFont_wght.ttf')  format('truetype')
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+    font-family: 'WorkSans';
+  }
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #FBFBFB;
+}
+.header{
+    margin-top: 0;
+    width: 100%;
+    height: 45%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/1.jpg");
+    padding-bottom: 25px;
+}
+.header i{
+    color: white;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.top-header{
+    margin-top: 2%;
+    display: flex;
+}
+.jevelin_watermark{
+    margin-left: 15%;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+
+}
+.menu{
+    margin-left: 20%;
+}
+.header a{
+    margin: 0 0.75rem;
+}
+.bottom-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.5%;
+}
+.bottom-title{
+margin-top: 1%;
+}
+.posts{
+    margin-top: 2.25%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+.card{
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: 0px 0px 50px -20px #000000;
+}
+.short{
+    height: 640px; 
+}
+.medium{
+    height : 680px;
+}
+.tall{
+    height: 720px;
+    margin-bottom: 40px;
+}
+.card-image{
+    width: 100%;
+    height: 63%;
+}
+.card-info{
+    margin-top: 5%;
+    width: 100%;
+    height: 23%;
+    padding-left: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.text-1 {
+    color:#808080;
+    font-size: 13px;
+    font-weight: bold;
+}
+.text-2{
+    font-size: x-large; 
+}
+.text-3{
+    color:#808080;
+    font-size: 13px;
+}
+.comment{
+    width: 100%;
+    height: 30px;
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+}
+.line{
+    height: 1.5px;
+    background-color: #808080;
+    width: 220px; 
+}
+.comment-watermark {
+    background-color: #F6F6F6;
+    border-radius: 40%;
+    padding: 5px 10px;
+    margin-left: 250px;
+}
+.comment hr {
+    position: absolute;
+    width: 220px;
+}
+.comment-watermark i {
+    font-size: 10pt;
+    margin-right: 5px;
+    color:#000;
+}
+.card-category{
+    padding-left: 27px;
+    color:#808080;
+    font-weight: bold;
+}
+
+@media screen and (max-width:449px){
+    .header{
+        background-size: cover;
+        padding-bottom: 0;
+        align-items: center
+    }
+    .top-header{
+        margin-top: 0%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .jevelin_watermark{
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+    .menu{
+        margin-left: 0%;
+        margin-top: 15%;
+        padding-left:6.5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .bottom-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 14%;
+    }
+    .top-title{
+        font-size: x-large;
+    }
+    .bottom-title{
+    margin-top: 3%;
+    }
+    .posts{
+        height: auto;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:600px) and (min-width:450px){
+    .header a{
+        margin: 0 0.45rem;
+    }
+    .header{
+        background-size: cover;
+        padding-bottom: 0;
+        align-items: center;
+        color:white;
+    }
+    .top-header{
+        margin-top: 0%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .jevelin_watermark{
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+    .menu{
+        margin-left: 0%;
+        margin-top: 15%;
+        padding: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .bottom-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 14%;
+    }
+    .top-title{
+        font-size: xx-large;
+    }
+    .bottom-title{
+    margin-top: 3%;
+    }
+    .posts{
+        height: auto;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:1050px) and (min-width:600px){
+    .header{
+        background-size: cover;
+        padding-bottom: 0;
+        align-items: center;
+        color:white;
+    }
+    .top-header{
+        margin-top: 0%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .jevelin_watermark{
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+    .menu{
+        margin-left: 0%;
+        margin-top: 15%;
+        padding: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .bottom-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 14%;
+    }
+    .top-title{
+        font-size: xx-large;
+    }
+    .bottom-title{
+    margin-top: 3%;
+    }
+    .card{
+        margin-bottom: 40px;
+    }
+}
